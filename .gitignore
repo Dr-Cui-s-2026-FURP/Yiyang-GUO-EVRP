@@ -1,0 +1,12 @@
+# 1. 拦截 data 文件夹下的所有默认内容 (Ignore everything in the data directory)
+data/*
+
+# 2. 反向放行 AI4CO 专属数据文件夹 (Allow the AI4CO data directory)
+!data/ai4co_data/
+
+# 3. 反向放行结构说明文件 (Allow the placeholder readme)
+!data/README_DATA.md
+
+# 4. 拦截跨平台与运行时的本地副产物 (Ignore cross-platform and runtime caches)
+__pycache__/
+.DS_Store
